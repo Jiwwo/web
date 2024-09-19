@@ -1,4 +1,4 @@
-/* Подключение шрифтов */
+/* шрифты */
 @font-face {
   font-family: "ManropeBold";
   src: url(../fonts/Manrope-Bold.ttf);
@@ -14,7 +14,7 @@
   src: url(../fonts/Manrope-Light.ttf);
 }
 
-/* Сброс базовых стилей */
+/* сброс базовых стилей */
 
 * {
   padding: 0;
@@ -24,10 +24,11 @@
   outline: none;
 }
 
-/* Общие стили для всего приложения */
+/* общие стили */
 
 body {
-  background: #031b34;
+  background: #040C18;
+  ;
   padding: 0 2rem;
 }
 
@@ -128,7 +129,7 @@ p {
   padding: 1rem 0;
 }
 
-/* Стили для Шапки */
+/* голова */
 
 .header {
   display: flex;
@@ -139,7 +140,8 @@ p {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  background: #031b34;
+  background: #040C18;
+  ;
 }
 
 .header .header-logo {
@@ -170,7 +172,7 @@ p {
   column-gap: 1rem;
 }
 
-/* Стили для первого экрана (Хиро секция) */
+/* хиро секция */
 
 .hero_section {
   display: flex;
@@ -212,6 +214,18 @@ p {
   border-radius: 0 4px 4px 0;
 }
 
+.hero_section .hero_section__left .left__social_approve{
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+.hero_section .hero_section__left .left__social_approve span{
+  padding: 17px;
+  font-size: 12px;
+}
+
+
 .hero_section .hero_section__right {
   height: 100%;
 }
@@ -220,7 +234,7 @@ p {
   width: 100%;
 }
 
-/* Секция брендов */
+/* бренды  */
 
 .brands_section {
   display: flex;
@@ -230,7 +244,7 @@ p {
   column-gap: 3rem;
 }
 
-/* Что такое Chat GPT */
+/* да я не знаю уже */
 
 .what_is_chatgpt_section {
   display: flex;
@@ -302,7 +316,7 @@ p {
   line-height: 1.8;
 }
 
-/* Будущее наступило */
+/* будущее */
 
 .future_here {
   display: flex;
@@ -317,9 +331,6 @@ p {
   row-gap: 2rem;
   flex: 2;
 }
-
-/* .future_here .future_here__left .left__header {
-} */
 
 .future_here .future_here__left .left__cta {
   color: #f49867;
@@ -355,10 +366,370 @@ p {
   width: 55%;
   color: #81afdd;
 }
-/* Медиа запросы для адаптива */
+
+/*dura */
+
+.woman-vr {
+  display: flex;
+  column-gap: 6rem;
+  margin: 6rem 0 2rem;
+  padding-bottom: 10rem;
+}
+
+.woman-vr .woman-vr__left {
+  height: 100%;
+  width: 60%;
+}
+
+.woman-vr .woman-vr__left img {
+  width: 100%;
+}
+
+.woman-vr .woman-vr__right {
+  height: 100%;
+  width: 40%;
+  margin-top: 20rem;
+}
+
+.woman-vr .woman-vr__right .early_access_text {
+  color: #71E5FF;
+  margin-bottom: 2rem;
+}
+
+.woman-vr .woman-vr__right .bed_text {
+  color: #81AFDD;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.woman-vr .woman-vr__right .request_early_access {
+    color: #f49867;
+    border-bottom: 1px solid transparent;
+}
+/*градиент и кнопка*/
+.begin{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 172.65px;
+  top: 3178px;
+  left: 135px;
+  gap: 0px;
+  border-radius: 10.72px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+.begin .begin_left{
+  width: 80%;
+}
+
+.begin .begin_left .text{
+  padding-top: 3rem;
+  padding-left: 3rem;
+  font-size: 12px;
+  color: #000;
+}
+
+.begin .begin_left .text2{
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  padding-left: 3rem;
+}
+
+.begin .begin_right{
+  width: 20%;
+  padding-left: 0.5rem;
+  padding-top: 3.5rem;
+} 
+
+.begin .begin_right .button_begin{
+  background-color: #000;
+  color: #fff;
+  width: 190px;
+  height: 60px;
+  border-radius:  40px;
+  border: #000;
+}
+
+/* нет */
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 950px;
+  background-color: #06182c;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.footer .footer_header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .header_text_box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 821px;
+  max-width: 821px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: 20px;
+  word-wrap: break-word; 
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.footer .btn_last {
+  display: flex;
+  padding: 1rem 4rem;
+  background-color: #031B34;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+  margin-top: 20px;
+}
+
+.btn_box {
+  margin-top: -5%;
+}
+
+.footer .gpt_box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%; 
+}
+
+.footer .logo,
+.footer .links,
+.footer .company,
+.footer .get_in_touch {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer .box_menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.footer .text_1, .footer .text_2, .footer .text_3 {
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer .text_1 {
+  font-size: 14px;
+}
+
+.footer .text_2 {
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.footer .text_3 {
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.footer .bottom_text_box {
+  font-family: "ManropeLight", sans-serif;
+  color: #ffffff;
+  background-color: #040C18;
+  font-size: 10px;
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0; 
+  text-align: center;
+}
+
+/* это я своровал */
 
 @media screen and (max-width: 1024px) {
   .header {
     flex-direction: column;
+  }
+}
+/* стили блога */
+.blog {
+  width: 100%;
+}
+
+.title_content_blog {
+  width: 70%;
+  margin: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+.block_content {
+  background: #042C54;
+}
+
+
+.container_content_blog {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin-bottom: 150px;
+  width: 100%;
+  gap: 30px;
+
+}
+
+
+.left_block_content {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row;
+  height: 100%;
+}
+
+
+.block_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.block_text_left, .block_text_right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.block_text_right h2 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.right_block_content  {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.date, .text_article {
+  margin: 0; 
+}
+
+.link_arcticle {
+  margin-top: auto; 
+}
+
+.link_arcticle:hover {
+  color: #e7771b;
+}
+
+.blog_section__img {
+  width: 100%; 
+  object-fit: cover;
+}
+
+.date {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h2.text_article {
+  background: #fff ;
+  -webkit-background-clip: text;
+  
+}
+
+
+h1.blog_content {
+  width: 60vw; 
+  padding: 20px; 
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+.footer .footer_header {
+  width: 100%;
+}
+
+/* перенос текста */
+.footer .header_text_box {
+  white-space: normal;  
+  word-break: break-word; 
+  width: 100%; 
+  text-align: center;  
+}
+
+
+@media (max-width: 768px) {
+  .footer .footer_header {
+    width: 100%;
+  }
+
+  .footer .text_box {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer .btn_last {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .footer .GPT_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .Logo,
+  .footer .Links,
+  .footer .Company,
+  .footer .Get_in_touch {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .text_box h1 {
+    font-size: 20px;
+  }
+
+  .footer .btn_last {
+    font-size: 14px;
+    padding: 0.8rem 3rem;
+  }
+
+  .footer .GPT_box {
+    gap: 10px; 
+  }
+
+  .footer .bottom_text_box {
+    font-size: 8px;
+    padding: 5px 0;
   }
 }
