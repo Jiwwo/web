@@ -30,7 +30,7 @@ body {
   background: #040C18;
   ;
   padding: 0 2rem;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 body.oh {
@@ -138,15 +138,14 @@ p {
 
 .header {
   display: flex;
-  max-width: 100vh;
+  max-width: 1169px;
   margin: 0 auto;
   width: 100%;
   padding: 2rem 0;
-  position: fixed;
   justify-content: space-between;
   align-items: center;
-  background: #040C18;
-  ;
+  background: #031b34;
+  column-gap: 25px
 }
 
 .header .header__logo .logo__link {
@@ -289,18 +288,6 @@ p {
   border-radius: 0 4px 4px 0;
 }
 
-.hero_section .hero_section__left .left__social_approve{
-  display: flex;
-  color: #fff;
-  align-items: center;
-}
-
-.hero_section .hero_section__left .left__social_approve span{
-  padding: 17px;
-  font-size: 12px;
-}
-
-
 .hero_section .hero_section__right {
   height: 100%;
 }
@@ -308,6 +295,7 @@ p {
 .hero_section .hero_section__right img {
   width: 100%;
 }
+
 
 /* бренды  */
 
@@ -481,53 +469,44 @@ p {
     color: #f49867;
     border-bottom: 1px solid transparent;
 }
-/*градиент и кнопка*/
-.begin{
+
+
+.registration {
+  margin: 50px;
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  height: 172.65px;
-  top: 3178px;
-  left: 135px;
-  gap: 0px;
-  border-radius: 10.72px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  max-width: 1200px
 }
 
-.begin .begin_left{
+.registration .left_container_reg .cta_reg {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.registration .left_container_reg h3.content_reg {
   width: 80%;
+  color: black;
+  font-weight: 700;
 }
 
-.begin .begin_left .text{
-  padding-top: 3rem;
-  padding-left: 3rem;
-  font-size: 12px;
-  color: #000;
+.registration .cta_buttons__start {
+  order: 2px solid black; 
+  border-radius: 30px; 
+  padding: 20px 55px; 
+  background-color: black; 
+  color: white; 
+  font-size: 18px; 
+  cursor: pointer;
+  text-align: center;
 }
 
-.begin .begin_left .text2{
-  font-size: 24px;
-  font-weight: 800;
-  color: #000;
-  padding-left: 3rem;
-}
-
-.begin .begin_right{
-  width: 20%;
-  padding-left: 0.5rem;
-  padding-top: 3.5rem;
-} 
-
-.begin .begin_right .button_begin{
-  background-color: #000;
-  color: #fff;
-  width: 190px;
-  height: 60px;
-  border-radius:  40px;
-  border: #000;
-  
+.registration .cta_buttons__start:hover {
+  background-color: black;
+  color: #f49867; 
 }
 
 /* нет */
@@ -740,17 +719,138 @@ h1.blog_content {
   line-height: 1.1;
 }
 
-.footer .footer_header {
+/* footer xddxdx xdd xd */
+
+.footer{
+  max-width: 1169px;
+  width: 100%;
+  padding-top: 196px;
+}
+
+.footer .upbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .textContent{
+  width: 70%;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.footer  .text_box{
+  width: 100%;
+  text-align: center;
+}
+
+.footer .textBox{
+  border: #fff;
+  border-style: solid;
+  border-width: 1px;
+  color: #4e4e4e;
+  background-color: #031B34;
+  padding: 20px 0;
+  width: 35%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 180px;
+}
+
+.footer .textBox:hover{
+  color: #fff;
+  background-color: #031B34;
+}
+
+.lowbox{
+  display: flex;
+  flex-direction: row;
   width: 100%;
 }
 
-/* перенос текста */
-.footer .header_text_box {
-  white-space: normal;  
-  word-break: break-word; 
-  width: 100%; 
-  text-align: center;  
+.footer .logoImg{
+  width: 118px;
+  height: 30px;
 }
+
+.footer .btn{
+  color: #fff;
+  cursor: pointer;
+  border-style: none;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: start;
+  padding-bottom: 25px;
+}
+
+.footer .adressContact{
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 31px;
+  font-weight: 300;
+}
+
+.footer .number{
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 25px;
+  font-weight: 200;
+}
+
+.footer .adress{
+  font-size: 12px;
+  color: #fff;
+  width: 80%;
+  padding-top: 23px;
+  font-weight: 300;
+}
+
+.footer .header_ref{
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 34px;
+  font-weight: bold;
+  margin-top: -100px;
+}
+
+.footer .adress{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  
+}
+
+.footer .refs{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer .company{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer .contact{
+  display: flex;
+  flex-direction: column;
+}
+
+.allrights{
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 78px;
+}
+
+
+
+
 @media screen and (max-width: 900px) {
   .hero_section {
     flex-direction: column;
@@ -887,13 +987,6 @@ h1.blog_content {
     row-gap: 1rem;
   }
 
-  .begin_left{
-    display: none;
-  }
-  .begin .begin_right .button_begin{
-    display: none; /*kak chze ee po seredine to sdelat'?  */
-  }
-
   .container_content_blog {
     display: flex;
     flex-direction: column;
@@ -922,68 +1015,95 @@ h1.blog_content {
     gap: 2rem;
   }
 }
-@media screen and (max-width: 768px) {
-  p {
-    font-size: 14px;
-    line-height: 1.5;
+@media screen and (max-width: 765px) {
+  a {
+    font-size: 12px;
   }
+
+  p {
+    font-size: 12px;
+  }
+
   h1 {
-    font-size: 46px;
+    font-size: 36px;
   }
 
   h2 {
-    font-size: 27px;
-  }
-
-  h3 {
     font-size: 19px;
   }
 
-  .hero_section {
-    width: 100%;
+  .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
+    min-width: auto;
   }
 
-  .brands_section {
-    margin-top: -15px;
-    padding-bottom: 0;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .what_is_chatgpt_section .what_is_chatgpt_section__top {
-    flex-direction: column;
-  }
-
-  .hero_section .hero_section__right img {
-    width: 85%;
-  }
-
-  .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
-    width: auto;
-  }
-
-  .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
-    flex-direction: column;
-  }
-
-  .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
-    row-gap: 2rem;
-  }
-
-  .what_is_chatgpt_section {
+  .future_here {
     row-gap: 3rem;
   }
 
-  .what_is_chatgpt_section {
-    margin: 6rem 0 0;
+  .future_here .future_here__right .right__container {
+    flex-direction: column;
   }
 
-  .what_is_chatgpt_section
-    .what_is_chatgpt_section__bottom
-    .bottom__container
-    .container__content {
-    line-height: 1.5;
+  .future_here .future_here__right .right__container .container__header {
+    width: 100%;
+  }
+
+  .future_here .future_here__right .right__container .container__content {
+    width: 100%;
+  }
+
+  .future_here .future_here__right {
+    row-gap: 2rem;
+  }
+
+  /*Dan*/
+  .container_person {
+    padding: 0;
+}
+
+  .cta_buttons__start {
+    width: 100%; 
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .registration {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
 
 
-}  
+  @media screen and (max-width: 505px) {
+    
+    .container_content_blog {
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .right_block_content {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 410px) {
+    
+    .registration{
+      flex-direction: column;
+      row-gap: 1.5rem;
+      text-align: center;
+    }
+
+    h3.content_reg {
+      width: 100%;
+    }
+
+    .footer {
+      font-size: 12px;
+    }
+  }
+}
+
