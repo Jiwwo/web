@@ -27,6 +27,7 @@
 /* Общие стили для всего приложения */
 
 body {
+  overflow-x: hidden;
   background: #031b34;
   padding: 0 2rem;
   overflow: auto;
@@ -250,13 +251,10 @@ p {
   column-gap: 1rem;
 }
 
-/* Стили для первого экрана (Хиро секция) */
-
 .hero_section {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
-  /* min-height: 60vh; */
   padding: 14rem 0 3rem;
 }
 
@@ -300,8 +298,6 @@ p {
   width: 100%;
 }
 
-/* Секция брендов */
-
 .brands_section {
   display: flex;
   flex-wrap: wrap;
@@ -311,8 +307,6 @@ p {
   padding: 3rem 0;
   column-gap: 3rem;
 }
-
-/* Что такое Chat GPT */
 
 .what_is_chatgpt_section {
   display: flex;
@@ -385,7 +379,6 @@ p {
   line-height: 1.8;
 }
 
-/* Будущее наступило */
 
 .future_here {
   display: flex;
@@ -652,10 +645,18 @@ p {
   background-color: #031B34;
 }
 
-.lowContent{
+.footer .lowContent{
+  justify-content: center; 
+  align-items: start;     
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.footer .adress, .footer .Referenses, .footer .company, .footer .contact {
+    flex: 1;                  
+    max-width: 200px;     
+    text-align: center;  
 }
 
 .footer .logoImg{
@@ -670,8 +671,8 @@ p {
   border-style: none;
   font-size: 12px;
   font-weight: 200;
-  text-align: start;
   padding-bottom: 25px;
+  text-align: center;         
 }
 
 .footer .adressContact{
@@ -715,12 +716,13 @@ p {
   justify-content: space-between;
   flex-direction: column;
   margin-right: 180px;
+  align-items: center;
 }
 
 .footer .company{
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   margin-right: 141px;
   width: 19%;
 }

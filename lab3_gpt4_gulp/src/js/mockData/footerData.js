@@ -9,8 +9,7 @@ export const adress_data = {
     image: {
         src:"./assets/img/logo.svg",
         alt:"logo"
-    },
-    adress: "ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013 <br /><br /> Все права защищены"
+    }
 }
 export const references_data = [
     {

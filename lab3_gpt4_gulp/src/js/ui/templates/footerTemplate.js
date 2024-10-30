@@ -10,10 +10,9 @@ export const createUpContentTemplate = ({text, button:{href, title}}) => {
     return template;
 };
 
-export const createAdressTemplate = ({image:{src, alt}, adress}) => {
+export const createAdressTemplate = ({image:{src, alt}}) => {
     const template = `
         <img class="logoImg" src="${src}" alt = "${alt}" />
-            <p class = "mainAdress">${adress}</p>
     `;
     return template
 };
